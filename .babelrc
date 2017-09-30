@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "babel-preset-expo",
+    "react",
+    "es2015"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source",
+        ["conditional-compile",{
+          "define":{
+            "TARGET":"ReactNative"
+          }
+        }]
+      ]
+    }
+  }
+}
